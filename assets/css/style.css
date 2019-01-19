@@ -10,7 +10,7 @@ body{
 
 
 #area{ margin: 20px 20px; }
-.card-deck
+/*.card-deck
 {
   height: 100px;
   background-color: transparent;
@@ -20,16 +20,16 @@ body{
   background-color: transparent;
   border-style: none;
 }
-/*.card-deck
+.card-deck
 {
   margin-right: 0px;
   margin-left: 0px;
-}*/
+}
 .card-deck .card 
 {
   margin-right: 0px !important;;
   margin-left: 0px !important;;
-}
+}*/
 img
 {
     margin-top: 10px ;
@@ -39,10 +39,22 @@ img
 
 
 }
+.briefcase
+{
+  position: relative;
+}
 p
 {
   position: absolute;
-  top: 38px;
- left: 50px;
+  top: 35px;
+ left: 45px;
  font-size: 3rem;
 }
+
+/*#pot
+{
+  
+  background: linear-gradient(
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8));
+}*/
