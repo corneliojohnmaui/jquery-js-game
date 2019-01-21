@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
@@ -12,10 +13,31 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
+  #loader{
+ /*   background-color: #F9D4FF;*/
+height: 100%;
+  }
+  .img-loader{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+
+  }
+  #myDiv {
+    display: none;
+  }
 
 </style>
 </head>
-<body>
+<body onload="myFunction()">
+<div id="loader" class="slide-in-left"><img class="img-loader" src="assets/images/dealornodealGIF.gif"></div>
+
+<div id="myDiv">
 <div class="container-fluid" id="InstructionLBL" style="display: none;">
  
 </div>
@@ -99,8 +121,9 @@
         </div>          
     </div>
 
-    <div class="col-lg-8">
-      <table class="table" id="cases" style="">
+    <div class="col-lg-8 justify-content-center" >
+      <div class="row">
+      <table class="" id="cases" style="" align="center">
 
         <tbody>
           <tr>
@@ -216,9 +239,10 @@
           </tr>
         </tbody>
       </table>
+      </div>
        <!-- --------------- SHOW PRICE DIV -------------- -->
       <div id="demodiv" align="center" style="display: none;">
-          <div class="container">
+          <div class="container" id="showCaseDiv">
               <h1>DEMOO</h1>
               <img id="bcclose" src="assets/images/briefcase-plain.png" style="display: none;">
               <img id="bcopen" src="assets/images/briefcaseopen.png" >
@@ -229,56 +253,77 @@
     </div>
 
     <div class="col-lg-2 mt-5">
-      <div class="form-group mt-5" >
-          <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >1000
-          </div>
+      <div class="form-group mt-5">
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >5000
-          </div>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="1000" readonly>
+          </div> 
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >25000
-          </div>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="5000" readonly>
+          </div> 
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >50000
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="25000" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="50000" readonly>
           </div>  
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >80000
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="80000" readonly>
           </div>  
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >100000
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="100000" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="200000" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="300000" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="400000" readonly>
           </div>  
 
           <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >200000
-          </div>  
-
-          <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >300000
-          </div>  
-
-          <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >400000
-          </div>  
-
-          <div class="input-group">
-          <span class="input-group-addon">$</span>
-          <label align="right" id="caselabel1" type="text" class="form-control" >500000
-          </div>                                                              
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="500000" readonly>
+          </div>                                                             
         </div>
     </div>
   </div>
@@ -292,6 +337,8 @@
   </div>
 </div>
 
+
+</div> <!-- //end of mydiv -->
 <br>
 
     <!-- ----------------------------- MODAL ------------------------ -->
@@ -316,6 +363,18 @@
   </div> 
 
 </body>
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
 <script type="text/javascript">
 // $('.card').click(function(){
 //   $(this).toggleClass('flipped');
@@ -336,7 +395,10 @@ $(document).ready(function(){
     $('#newgame').click(function(){
       // location.reload();
       $('#CountClickTxt').val(' ');
+
       sortRandom();
+      $('#InstructionLBL').delay('fast').fadeIn();
+      $('#InstructionLBL').append("<h1> Please Select Your Case </h1>");
       // $('#myModal').modal('show');
       // gameStep(0);
       // var rnd = chooseYourCase();
@@ -348,8 +410,7 @@ $(document).ready(function(){
 
       switch (x = round) {
         case 0:
-            $('#InstructionLBL').delay('fast').fadeIn();
-            $('#InstructionLBL').append("<h1> Please Select Your Case </h1>");
+           
             // if (true) {}
             $('#'+idcard).toggle('hide');
             $('#yourcase').val(idcard);
@@ -568,7 +629,7 @@ $(document).ready(function(){
         }, 3100);
 
         
-        $('#demodiv').delay(3900).fadeOut();
+        $('#demodiv').delay(3200).fadeOut();
         $('#cases').delay(4000).fadeIn();
         // jQuery('#'+idcard).css('opacity') = '0.6';
         // alert(idcard)
