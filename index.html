@@ -3,12 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 
 </style>
@@ -20,46 +22,85 @@
 <div class="container" id="area">
   <div class="row">
     <div class="col-lg-2">
-      <input type="text" id="CountClickTxt" class="form-control" name="">
+        <input type="text" id="CountClickTxt" class="form-control" name="">
+        <input type="text" id="casesID" class="form-control" name="" placeholder="idofcase">
+        <br />
+        <div class="form-group">
 
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="1" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="5" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="25" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="50" readonly>
+          </div>  
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="80" readonly>
+          </div>  
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="100" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="200" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="300" readonly>
+          </div> 
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="400" readonly>
+          </div>  
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">$</span>
+            </div>
+              <input id="caselabel1" type="text" class="form-control" value="500" readonly>
+          </div>                                                             
+        </div>          
     </div>
 
     <div class="col-lg-8">
-  <!--     <div class="row" id="cases">
-        <div class="card-deck" >
-          <div class="card" style="" id="briefcase1" onclick="showInside(this.id)">
-            <img class="card-img-top pot" id="pot" src="assets/images/briefcase-plain.png" alt="Card image cap">
-            <p> 1 </p>
-            <input id="case1" type="text"/>
-           
-          </div>
-          <div class="card" id="briefcase2">
-            <img class="card-img-top" src="assets/images/briefcase-plain.png" alt="Card image cap">
-            <p> 2 </p>
-            <input id="case2" type="text"/>
-        
-          </div>
-          <div class="card" id="briefcase3">
-            <img class="card-img-top" src="assets/images/briefcase-plain.png" alt="Card image cap">
-            <p> 3 </p>
-            <input id="case3" type="text"/>
-         
-          </div>
-          <div class="card" id="briefcase4">
-            <img class="card-img-top" src="assets/images/briefcase-plain.png" alt="Card image cap">
-            <p> 4 </p>
-            <input id="case4" type="text"/>
-          
-          </div>
-          <div class="card" id="briefcase5">
-            <img class="card-img-top" src="assets/images/briefcase-plain.png" alt="Card image cap">
-            <p> 5 </p>
-            <input id="case5" type="text"/>
-           
-          </div>
-        </div>
-      </div> -->
-      <table class="table" id="cases">
+      <table class="table" id="cases" style="">
 
         <tbody>
           <tr>
@@ -100,24 +141,146 @@
             </td>            
           </tr>
           <tr>
-
+            <td >
+              <div class="briefcase" id="briefcase6">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 6 </p>
+              <input id="case6" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase7" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 7 </p>
+              <input id="case7" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase8" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 8 </p>
+              <input id="case8" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase9" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 9 </p>
+              <input id="case9" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase10" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 10 </p>
+              <input id="case10" class="form-control" type="text"/>
+              </div>
+            </td>            
           </tr>
           <tr>
-            <td>@mdo</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td >
+              <div id="briefcase11" class="briefcase" >
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 11 </p>
+              <input id="case11" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase12" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 12 </p>
+              <input id="case12" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase13" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 13 </p>
+              <input id="case13" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase14" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 14 </p>
+              <input id="case14" class="form-control" type="text"/>
+              </div>
+            </td>
+            <td >
+              <div id="briefcase15" class="briefcase">
+              <img class=""  src="assets/images/briefcase-plain.png" alt="Card image cap">
+              <p> 15 </p>
+              <input id="case15" class="form-control" type="text"/>
+              </div>
+            </td>            
           </tr>
         </tbody>
       </table>
        <!-- --------------- SHOW PRICE DIV -------------- -->
       <div id="demodiv" align="center" style="display: none;">
-          <p id="demo"></p>
-          <h1>DEMOOOOOOOO</h1>
+          <div class="container">
+              <h1>DEMOO</h1>
+              <img id="bcclose" src="assets/images/briefcase-plain.png" style="display: none;">
+              <img id="bcopen" src="assets/images/briefcaseopen.png" >
+              <p id="caseNum"></p>
+              <input id="showPriceInput" class="" type="text" readonly/>
+          </div>
       </div>
     </div>
 
-    <div class="col-lg-2"></div>
+    <div class="col-lg-2 mt-5">
+      <div class="form-group mt-5" >
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >1000
+          </div>
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >5000
+          </div>
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >25000
+          </div>
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >50000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >80000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >100000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >200000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >300000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >400000
+          </div>  
+
+          <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <label align="right" id="caselabel1" type="text" class="form-control" >500000
+          </div>                                                              
+        </div>
+    </div>
   </div>
   <div class="row">
     <button type="button" id="newgame"> New Game</button>
@@ -143,20 +306,8 @@
           <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form">
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-              <input type="text" class="form-control" id="psw" placeholder="Enter password">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="" checked>Remember me</label>
-            </div>
-              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-          </form>
+            <button type="button" class="btn btn-danger btn-lg DorND" id="1"> DEAL</button>
+            <button type="button" class="btn btn-default btn-lg DorND" id="2"> NO DEAL</button>
         </div>
 
       </div>
@@ -178,37 +329,60 @@
 $(document).ready(function(){
 
     //sample price/money on every case
-    var price = [5,3,2,4,1];
+    var price = [1,5,25,50,80,100,200,300,400,500,1000,5000,25000,50000,80000];
     //alert prices 
     // alert(price); 
     //RESET/NEW GAME
     $('#newgame').click(function(){
+      // location.reload();
+      $('#CountClickTxt').val(' ');
       sortRandom();
-      gameStep(0);
+      // $('#myModal').modal('show');
+      // gameStep(0);
       // var rnd = chooseYourCase();
 
-      
-
     });
-    function gameStep(round){
+    
+    function gameStep(round,idcard,getPrice){
        // var x = "0";
 
       switch (x = round) {
         case 0:
             $('#InstructionLBL').delay('fast').fadeIn();
             $('#InstructionLBL').append("<h1> Please Select Your Case </h1>");
-            countClick(1);
+            // if (true) {}
+            $('#'+idcard).toggle('hide');
+            $('#yourcase').val(idcard);
+            $('#InstructionLBL').empty();
+            $('#InstructionLBL').delay('fast').fadeIn();
+            $('#InstructionLBL').append("<h1> Please Select 7 Case </h1>");
+            // gameStep(1);
+            // $('#CountClickTxt').val(countC);
+            // countClick(1);
+              
           break;
         case 1:
-         
-          alert('case1')
-            $('#InstructionLBL').delay('fast').fadeIn();
-            $('#InstructionLBL').append("<h1> Please Select 2 Case </h1>");
- 
+            var cctxt = $('#CountClickTxt').val();
+            alert('case1')
+            if (cctxt == 8) {
+                    hideAndShowClickedCase(idcard,getPrice)
+                  // $('#myModal').modal('show');
+                  setTimeout(function() {
+                      $('#myModal').modal('show');
+                  }, 4000);
+                  showBanker(2);
+                    // alert('modal')
+            }else{
+              
+              hideAndShowClickedCase(idcard,getPrice)
+          
+            }
+
           break;
          case 2:
+          $('#InstructionLBL').empty();
           $('#InstructionLBL').delay('fast').fadeIn();
-          $('#InstructionLBL').append("<h1> Please Select 2 Case </h1>");
+          $('#InstructionLBL').append("<h1> Please Select 1 Case </h1>");
        
 
           break;
@@ -217,6 +391,7 @@ $(document).ready(function(){
       }
          // document.getElementById("demo").innerHTML = text;
     }
+
 
     function sortRandom(){
         //sort price in different order
@@ -247,61 +422,96 @@ $(document).ready(function(){
         // alert(newarr[1])
         // document.getElementById('case1').value = newarr[0];
         // document.getElementById('case2').value = newarr[1];
-   
+        
     } 
    
-    // countClick();
-    function countClick(limit){
-    alert('countclick')    
-         //number of click default to 0
-        // $('#InstructionLBL').delay('fast').fadeIn();
-        // $('#InstructionLBL').append("<h1> Please Select 2 Case </h1>");
+    countClick();
+
+    function countClick(stage){
+     alert('countclick')    
 
         var countC=0;
 
             $('.briefcase').click(function(){    
-                alert('countClick CARDCLICK')
+                alert('CASECLICK')
                 var idcard = $(this).attr('id');
-                
-                
-                // var round = 2;
-                // gameStep(round);
-                countC = countC + 1; //increment number of click 
+                var caseNumber = idcard.replace(/\D/g,'');
+              
+                var cct = $('#case1').val();
+                var getPrice = $('#case'+caseNumber).val();
+
+                countC = countC + 1; //increment number of click
                  $('#CountClickTxt').val(countC);
-                 var cct = $('#CountClickTxt').val();
-                if (countC == 1) {
-                   $('#'+idcard).toggle('hide');
-                   $('#yourcase').val(idcard);
-                   $('#InstructionLBL').empty();
-                   // gameStep(1);
-                   gameStep(1);
-                }
-                else if(cct == 4){
-                  // 2 case opened
-                  alert('bancker')
-                   gameStep(2);
-                  $('#myModal').modal('show');
-                }
-                else if(cct ==  5){
-                  // 2 case opened
-                  alert('bancker')
+                 var cctxt = $('#CountClickTxt').val();
 
-                }
-                else{
-                  hideAndShowClickedCase(idcard);
-                }
+                 var stage = 1;
 
-                // else if (countC >= limit) {
-                //    
+                 if (cct == '') {
+                  alert('new game first');
+                 }
+                 else if(cct != '' && cctxt == 1){
+                  alert('go to step 0')
+                  gameStep(0,idcard,getPrice);
+                 }
+                 else if(cctxt >= 2 && cctxt < 9){
+                                   
+                    alert('go to step 1')
+                    gameStep(1,idcard,getPrice);
+                  
+                 }
+                 // else if()
+                
+                 // if (stage == 1) { --------------
+                 //    if (cctxt-1 == 3) {
+                 //      alert('banker')
+                 //      gameStep(1);
+                 //    }else{
+                 //      $('#'+idcard).toggle('hide');
+                 //    }
+                    
 
+                 // }
+                 // else if(stage == 2) {
+                 //    if (cctxt-1 == 6) {
+                 //      alert('banker')
+                 //      gameStep(2);
+                 //    }else{
+                 //       $('#'+idcard).toggle('hide');
+                 //    }
+                 //    // alert('bankers')
+                 //    // gameStep(1);
+
+                 // } ---------------
+
+                   // if (stage == 1 && limit) {}
+                 // var yc = $('#yourcase').val();
+                 // -----
+                // if (cct == '') {
+                //   alert('please click new game');
+
+                //   // $('#CountClickTxt').val('');
                 // }
-                // else{
-                //   alert('banker')
-                // }
-                // else if(cct-1 == limit){
-                //   alert('banker')
-                // }
+                // else if (cct != '') {
+                //     countC = countC + 1; //increment number of click                     
+                //     $('#CountClickTxt').val(countC);
+                    
+                //     if (countC == 1) {
+                //       $('#'+idcard).toggle('hide'); 
+                //       $('#yourcase').val(idcard);
+                //       $('#InstructionLBL').empty();
+                //       gameStep(1);
+                //     }
+                //     else {
 
+                //       $('#'+idcard).toggle('hide'); 
+                //       $('#casesID').val(idcard);
+                //       hideAndShowClickedCase(idcard);
+
+                //     }                                                    
+                // }
+                //-----
+
+                
           });
 
              
@@ -334,26 +544,51 @@ $(document).ready(function(){
        
     //            gameStep(0);
           
-           
-
-      
     //    });
 
     // }
-    function hideAndShowClickedCase(idcard){
+
+    function hideAndShowClickedCase(idcard,getPrice){
 
         $('#'+idcard).toggle('hide');
         $('#cases').delay('slow').fadeOut();
-        $('#demodiv').delay('slow').fadeIn();
-        $('#demodiv').delay(1000).fadeOut();
-        $('#cases').delay(2000).fadeIn();
+        $('#demodiv').delay(1000).fadeIn();
+        // $('#bcclose').delay(2000).slideDown();
+        $('#bcopen').delay(2000).fadeIn();
+        $('#showPriceInput').val('$ '+getPrice);
+       
+        setTimeout(function () {
+        $('[value='+getPrice+']').css('background-color','gray');
+        }, 2800);
+         setTimeout(function () {
+        $('[value='+getPrice+']').css('background-color','white');
+        }, 3000);
+        setTimeout(function () {
+        $('[value='+getPrice+']').css('background-color','gray');
+        }, 3100);
+
+        
+        $('#demodiv').delay(3900).fadeOut();
+        $('#cases').delay(4000).fadeIn();
         // jQuery('#'+idcard).css('opacity') = '0.6';
         // alert(idcard)
         
     }
 
 
-  
+      function showBanker(nextgs)
+    {
+        $('.DorND').click(function(){
+          var val = $(this).attr('id');
+          if (val == 1) {
+            alert('deal')
+          }else{
+            $('#myModal').modal('hide');
+            gameStep(nextgs);
+          }
+
+        });
+    }
 
 
 
