@@ -362,17 +362,44 @@ height: 100%;
     </div>
   </div> 
 
+  <!-- ----------- MODAL NEW GAME ---------------- -->
+  <div class="modal fade" id="newgameModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+        <!--   <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          <h4><span class="glyphicon glyphicon-lock"></span> DEAL OR NO DEAL </h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;text-align: center">
+            <button type="button" class="btn btn-dark btn-lg" id="play"> PLAY </button>
+          
+        </div>
+
+      </div>
+      
+    </div>
+  </div> 
+
 </body>
   <script>
   var myVar;
 
   function myFunction() {
     myVar = setTimeout(showPage, 3000);
+    // showNewGameBtn();
+     var showmod = setTimeout(showNewGameBtn,3200);
   }
 
   function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
+  }
+  
+  function showNewGameBtn(){
+   $('#newgameModal').modal('show');
+    
   }
   </script>
 <script type="text/javascript">
@@ -395,14 +422,14 @@ $(document).ready(function(){
     $('#newgame').click(function(){
       // location.reload();
       $('#CountClickTxt').val(' ');
-
+  
       sortRandom();
       $('#InstructionLBL').delay('fast').fadeIn();
       $('#InstructionLBL').append("<h1> Please Select Your Case </h1>");
       // $('#myModal').modal('show');
       // gameStep(0);
       // var rnd = chooseYourCase();
-
+      // showNewGameBtn();
     });
     
     function gameStep(round,idcard,getPrice){
@@ -489,7 +516,7 @@ $(document).ready(function(){
     countClick();
 
     function countClick(stage){
-     alert('countclick')    
+     // alert('countclick')    
 
         var countC=0;
 
